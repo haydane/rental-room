@@ -1,0 +1,119 @@
+<div style="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-home"></i>
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    {{#if user}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-heart"></i> Favorite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/logout">
+                            <i class="fa fa-sign-out"></i> Logout
+                        </a>
+                    </li>
+                    {{else}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/users/login">
+                            <i class="fa fa-sign-in"></i> Login</a>
+                    </li>
+                    {{/if}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-users"></i> About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+{{!-- rental room list --}}
+<div class="container" style="margin-top:90px">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="/roomDetail">
+                    <img class="card-img-top" src="1.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Sokha Retal Room</a>
+                    </h4>
+                    <h5>$24.99</h5>
+
+                    <p class="card-text">
+                        <p class="truncate">The Sokha Hotels & Resorts also known as Sokha Hotel Group is based in Phnom Penh and it is also
+                            Cambodian owned company which is under the Sokimex Investment Group.</p>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                    <i style="float: right" class="fa fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img class="card-img-top" src="2.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Siem Reap Pub Hotel</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p class="card-text">
+                        <p class="truncate">Offering an outdoor pool and an on-site restaurant, Siem Reap Pub Hostel is located 300 m away from
+                            the popular Pub Street in Siem Reap.</p>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                    <i style="float: right" class="fa fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+                <a href="#">
+                    <img class="card-img-top" src="3.jpg" alt="">
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Siem Reap Pub Hotel</a>
+                    </h4>
+                    <h5>$24.99</h5>
+                    <p class="card-text">
+                        <p class="truncate"> Located in the heart of the famous BKK1 district of Phnom Penh this landmark building sets the standard for luxury in the
+                            city. The facilities on offer are second to none with a state of the art gym, spa complex, large
+                            swimming pool capable of swimming lengths, coffee shop / restaurant, children’s play area and
+                            a rooftop garden with viewing decks offering spectacular panoramic views of the stunning skyline</p>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                    <i style="float: right" class="fa fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            {{#if success_msg}}
+            <div style="margin-top: 20px" class="alert alert-success">{{success_msg}}</div>
+            {{/if}} {{#if error_msg}}
+            <div style="margin-top: 20px" class="alert alert-success">{{error_msg}}</div>
+            {{/if}} {{#if error}}
+            <div style="margin-top: 20px" class="alert alert-success">{{error}}</div>
+            {{/if}}
+        </div>
+        {{!-- <div class="col-md-4"></div> --}}
+    </div>
+    <div class="row">
+        <div class="col-md-4" style="float: right">
+        </div>
+        {{!-- login form --}}
+        <div class="col-md-4" style="margin-top:50px">
+            <div class="card h-100">
+                <div class="card-body">
+                    <form action="{{post_to}}" method="POST">
+                        <p style="text-align:center">Lgoin to your Account</p>
+                        <label for="">Username</label>
+                        <br>
+                        <input style="border-radius: 5px ;padding:5px" size="32" type="text" name="username" placeholder="username">
+                        <br>
+                        <br>
+                        <label for="">Password</label>
+                        <br>
+                        <input style="border-radius: 5px ;padding:5px" size="32" type="password" name="password" placeholder="password">
+                        <br>
+                        <br>
+                        <button style="width:310px;height: 35px" type="submit" class="btn btn-success">Login</button><br>
+                        <br>
+                        <a style="float: left" href="/users/register">register</a>
+                        <a style="float: right" href="#">forget password?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container" style="padding: 10px;">
+     {{!-- page head --}}
+     <div class="row" >
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+               {{#if errors}} {{#each errors}}
+               <div class="alert alert-danger">{{msg}}</div>
+               {{/each}} {{/if}}
+          </div>
+          <div class="col-md-4"></div>
+     </div>
+     {{!-- form register --}}
+     <div class="row" style="margin-top:10px">
+          <div class="col-md-6">
+               <form action="/users/register" method="POST">
+                    <div class="card align-items-center" style="margin: 0 auto; float:none ; margin-bottom:10px">
+                         <br>
+                         <h1 class="page-header" style="text-align:center">Register</h1>
+                         <div class="form-group">
+                              <label style="text-align: left">Name</label>
+                              <br>
+                              <input size="30" style="padding: 3px ;border-radius:5px" type="text" placeholder="full name" name="fullname">
+                              <br>
+                         </div>
+                         <div class="form-group">
+                              <label>Username</label>
+                              <br>
+                              <input size="30" style="padding: 3px ;border-radius:5px" type="text" placeholder="username" name="username">
+                              <br>
+                         </div>
+                         <div class="form-group">
+                              <label>Password</label>
+                              <br>
+                              <input size="30" style="padding: 3px;border-radius:5px" type="password" placeholder="password" name="password">
+                              <br>
+                         </div>
+                         <div class="form-group">
+                              <label>Retype-Password</label>
+                              <br>
+                              <input size="30" style="padding: 3px ;border-radius:5px" type="password" placeholder="retype-password" name="retypePassword">
+                              <br>
+                         </div>
+                         <button style="width:290px;height:35px" class="btn btn-success">Sign Up</button><br>
+                         <a href="/">already have an account</a>
+                    </div>
+               </form>
+          </div>
+          <div class="col-md-6">
+               <div class="card align-items-center" style="height:550px;">
+                    <div class="card-body">
+                         <h4 style="margin-top:200px">Welcome to the world of rental</h4>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
